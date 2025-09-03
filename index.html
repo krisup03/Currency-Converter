@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="box">
+  <div class="amount-row">
+    <label for="amountInput">Amount:</label>
+    <input type="number" id="amountInput" value="1" min="0.01" step="any">
+  </div>
+
+  <div class="from-to-row">
+    <div>
+      <img id="fromFlag" src="" alt="From Flag">
+      <label for="from">From:</label>
+      <select id="from"></select>
+    </div>
+    <div>
+      <img id="toFlag" src="" alt="To Flag">
+      <label for="to">To:</label>
+      <select id="to"></select>
+    </div>
+  </div>
+
+  <button id="convertBtn">Convert</button>
+  <div id="converted">Converted value will appear here.</div>
+</div>
+
+
+    <script src="code.js"></script>
+    <script src="logic.js"></script>
+    
+</body>
+</html>
